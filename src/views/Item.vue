@@ -17,7 +17,8 @@
             </div>
             <ion-buttons>
               <button class="text-3xl">
-                <font-awesome-icon @click="$router.push('/pages/addTo/4')" :icon="['fas', 'bag-shopping']" class="text-red-600" />
+                <font-awesome-icon @click="$router.push('/pages/addTo/4')" :icon="['fas', 'bag-shopping']"
+                  class="text-red-600" />
               </button>
             </ion-buttons>
           </div>
@@ -73,9 +74,9 @@
               </ion-select-option>
             </ion-select>
             <div id="beverageSize">
-              <div v-for="(size, index) in beverageSizes" :key="index">
-                <input type="radio" :id="`size-${index}`" :value="size" v-model="selectedSize" name="beverageSize">
-                <label :for="`size-${index}`"> {{ beverageSizes[index] }}</label>
+              <div v-for="(size, index) in beverageSizes" :key="size.id">
+                <input type="radio" :id="size.size" :value="size.size" v-model="selectedSize" name="beverageSize">
+                <label :for="size.size"> {{ size.size }}</label>
               </div>
             </div>
           </ion-col>
@@ -181,7 +182,7 @@ import image17 from '@/assets/p_17.png';
 import image18 from '@/assets/p_18.png';
 
 const beverages = ['Coke', 'Royal', 'Pepsi', 'Sprite', 'Iced Tea', 'Water'];
-const beverageSizes = ['Regular', 'Large', 'X-Large'];
+const beverageSizes = [{ id: 1, size: 'Regular' }, { id: 2, size: 'Large' }, { id: 3, size: 'X-Large' }];
 const selectedItem = ref('');
 const selectedSize = ref('');
 
