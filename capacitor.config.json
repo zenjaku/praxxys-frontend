@@ -1,0 +1,15 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "praxxys-frontend",
+  "webDir": "dist",
+  "plugins": {
+    "StatusBar": {
+      "overlays": false,
+      "style": "DARK",
+      "backgroundColor": "#00000048"
+    }
+  },
+  "server": {
+    "cleartext": true
+  }
+}

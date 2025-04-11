@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+* {
+    font-family: "Poppins", serif;
+    user-select: none;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+ion-header {
+    --ion-toolbar-background: #fff !important;
+    --ion-toolbar-border-color: #fff !important;
+    border: 1px solid #fff;
+}
+
+#menubar {
+    overflow-y: auto;
+}
+
+.thumbnail1 {
+    width: 5em;
+    height: 5em;
+    border-radius: 50em;
+    object-fit: cover;
+}
+
+.thumbnail2 {
+    width: 3em !important;
+    height: 3em;
+    object-fit: cover;
+}
+
+.withSpan {
+    border-radius: 50%;
+    background-color: #fdbb05;
+    padding: 0.1em .5em;
+    width: 1.8em;
+    height: 1.8em;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+#points .faAngleRight {
+    margin-left: 2em;
+}
+
+#items .faMenuIcons {
+    margin-right: .5em;
+    color: #bdbdbdab;
+}
+
+#items a {
+    color: #6b6b6b;
+}
+
+.redBtn {
+    background-color: #d30505;
+    color: #fff;
+    width: 30vw;
+    height: 2.5em;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.searchInput {
+    background-color: #cacaca42;
+    border: 2px solid #00000048;
+    border-radius: 15px;
+    padding: .2em 3em !important;
+    color: #000000d3 !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchIcon,
+.settings {
+    position: absolute;
+    z-index: 2;
+}
+
+.searchInput .searchIcon {
+    transform: scale(1.5);
+    left: .75em;
+}
+
+.searchInput .settings {
+    right: .75em;
+    transform: scale(1.5);
+}
+
+.image-scroller {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 0em 0;
+}
+
+.image-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.promo-image {
+    height: 7em;
+    width: auto;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.popular-image {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    max-width: 8em;
+    width: 100%;
+}
+
+.food-image {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    max-width: 8em;
+    width: 100%;
+    height: 7em;
+}
+
+.text-scroller {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: .1em;
+    padding: 0 0;
+}
+
+.text-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.bottomPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+a.active .faMenuIcons {
+    color: #d30505 !important;
+}
+
+.backBtn {
+    background-color: #c9c9c97e;
+    height: 2.5em;
+    width: 3em;
+    border: 3px solid #7c7a7a48;
+    border-radius: 1em;
+}
+
+.item-image {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    max-width: 10em;
+    width: 100%;
+    height: 12em;
+    transform: scale(1.5);
+}
+
+.qtyBtn {
+    border: 2px solid #cecece;
+    background-color: #cecece3d;
+    width: 2em;
+    height: 2em;
+    border-radius: 10px;
+}
+
+.qtyIcon {
+    color: #d30505;
+}
+
+.selectionTag {
+    border: 2px solid #cecece;
+    background-color: #cecece3d;
+    padding: 0 1em;
+    border-radius: 15px;
+    margin: 1em 0;
+}
+
+#beverageSize {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#beverageSize input[type="radio"] {
+    display: none;
+}
+
+#beverageSize input[type="radio"]+label {
+    border: 2px solid #cecece;
+    background-color: #cecece3d;
+    padding: .3em 1em;
+    border-radius: 13px;
+    margin: .2em 0;
+    font-weight: bold;
+    width: 100%;
+    height: 3.5em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#beverageSize input[type="radio"]:checked+label {
+    border: 2px solid #e0a503;
+    background-color: #fdbb05;
+    color: #fff;
+}
+
+ion-checkbox {
+    --size: 32px;
+    --checkbox-background-checked: #d30505;
+}
+
+ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid #cecece;
+}
+
+.thumbsUp {
+    /* border: 2px solid #d30505; */
+    background-color: #d30505;
+    padding: 1em;
+    border-radius: 50px;
+}
+
+.thumb {
+    transform: rotate(-42deg) scale(4);
+    padding: .8em;
+    color: #fff;
+}
+
+ion-modal#contentModal {
+    --width: fit-content;
+    --min-width: 250px;
+    --height: fit-content;
+    --border-radius: 25px;
+    --box-shadow: 0 28px 48px #ff08082e;
+}
+
+.proceedButton {
+    background-color: #d30505;
+    color: #fff;
+    width: 250px;
+    height: 40px;
+}
+
+.pointsCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border: 25px solid #d3050550;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5em;
+}
+
+#categories input[type="radio"] {
+    display: none;
+}
+
+#categories input[type="radio"]+label {
+    border: 2px solid #cecece;
+    background-color: #cecece3d;
+    padding: .3em 1em;
+    border-radius: 13px;
+    margin: .2em 0;
+    font-weight: bold;
+    width: 100%;
+    height: 2.5em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#categories input[type="radio"]:checked+label {
+    border: 2px solid #920404;
+    background-color: #d30505;
+    color: #fff;
+}
+
+
+#level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5em;
+}
+
+#level input[type="radio"] {
+    display: none;
+}
+
+#level input[type="radio"]+label {
+    border: 2px solid #cecece;
+    background-color: #cecece3d;
+    padding: .3em 1em;
+    border-radius: 13px;
+    margin: .2em 0;
+    font-weight: bold;
+    width: 100%;
+    height: 2.5em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#level input[type="radio"]:checked+label {
+    border: 2px solid #920404;
+    background-color: #d30505;
+    color: #fff;
+}
