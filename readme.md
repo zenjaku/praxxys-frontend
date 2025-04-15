@@ -1,4 +1,4 @@
-# Tomarao, Renzo F (Front-end Applicant)
+# IONIC VIA VUE WITH CAPACITOR (FRONT-END)
 
 ## Install first the Ionic CLI to run and make the project
 ```bash
